@@ -1,0 +1,29 @@
+ import matplotlib.pyplot as plt
+import numpy as np
+import cv2
+img_path='/content/pizza.jpg'
+img = cv2.imread(img_path)
+print(img)
+for i,col in enumerate(color):
+  hist = cv2.calcHist([img],[i],None,[256],[0,256])
+  plt.plot(hist,color = col)
+  plt.xlim([0,256])
+plt.show
+img = cv2.imread(img_path)
+plt.hist(img.ravel(),256,[0,256])
+plt.show()
+print(img.shape)
+print("Rows of Pixels: %d Rows"%(img.shape[0]))
+print("Columns of Pixels: %d Columns"%(img.shape[1]))
+print("Color Channels: %d Color Channels"%(img.shape[2]))
+plt.title('Input image')
+plt.imshow(img)
+plt.subplot(2,1,1)
+plt.imshow(img)
+plt.subplot(2,1,1)
+plt.imshow(img)
+plt.subplot(2,1,2)
+R, G, B = img[:,:,0], img[:,:,1], img[:,:,2]
+imgGray = 0.2989 * R + 0.5870 * G + 0.1140 * B
+plt.imshow(imgGray, cmap='gray')
+plt.show()
