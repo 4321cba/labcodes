@@ -1,0 +1,23 @@
+import random
+user1=input("enter a choice(rock,paper,scissors):")
+list=["rock","paper","scissors"]
+Computer=random.choice(list)
+print("user1 value",user1)
+print("user2 value",Computer)
+if user1==Computer:
+    print("its a tie")
+elif user1=="rock":
+    if Computer=="paper":
+        print("computer wins")
+    else:
+            print("user1 wins")
+elif user1=="paper":
+    if Computer=="scissors":
+        print("computer wins")
+    else:
+            print("user1 wins")
+elif user1=="scissors":
+    if Computer=="rock":
+        print("computer wins")
+    else:
+            print("user1 wins")
