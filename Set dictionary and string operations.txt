@@ -1,0 +1,79 @@
+print("----------Set----------")
+S1={1,2,3,4,5,6}
+S2={1,2,3}
+print("Original set", S1)
+S1.add(8)
+print("Add 8 in set", S1)
+S1.remove(8)
+print("Remove 8 in set", S1)
+S1.pop()
+print("Pop element default 1st element in set", S1)
+print("Length set", len(S1))
+S1.update([8,9])
+print("updated 8,9 in set",S1)
+S1.discard(3)
+print("discard 3",S1)
+S1={1,2,3,4,5,6}
+S2={1,2,3,9}
+print("Reinitialize S1 ::",S1)
+print("initialize S2 ::",S2)
+print("S2 subset of S1 ::",S2.issubset(S1))
+print("S2 superset of S1 ::",S2.issuperset(S1))
+print("S1 Union S2 ::",S1.union(S2))
+print("S1 Intersection S2 ::",S1.intersection(S2))
+print("S1 diffrence S2 ::",S1-S2)
+print("S1 Symmetric diffrence S2 ::",S1^S2)
+S3=S2.copy()
+print("Copy S3 as S2",S3)
+print("Length of S3::",len(S3))
+print("Min of S3::",min(S3))
+print("Max of S3::",max(S3))
+print("Sum of S3::",sum(S3))
+print("Sorted of S3::",sorted(S3))
+print("-----------Dictionary---------------")
+A={"Name":"Abcdef","age":18,"address":"kalyan"}
+print("Dictionary A",A)
+print("Keys of Dictionary A",A.keys())
+print("Values of Dictionary A",A.values())
+print("Items of Dictionary A",A.items())
+print("Length of A",len(A))
+print("A[name]", A['Name'])
+print("Get age ", A.get('age'))
+A['tel']=322233
+print("Adding tel",A)
+C=A.clear()
+print("Clearing A :",A)
+A={'name':'bj','age':23,'contact':666555,'gender':'male'}
+B={'name':'bj','age':23,'contact':666555,'ge':'male',"rank":1}
+A.update(B)
+print("Updating A with B : ",A)
+My_dict = {'name':'Jack', 'age': 26}
+print("New dictionary :: ",My_dict)
+My_dict['age'] = 27
+#Output: {'age': 27, 'name': 'Jack'}
+print("Change age 26 to 27 :: ",My_dict)
+# add item
+My_dict['address'] = ['Downtown']
+# Output: {'address': 'Downtown', 'age': 27, 'name': 'Jack'}
+print("Add new address field :: ",My_dict)
+print("-----------String--------------")
+str="Welcome to python"
+print("String:",str)
+print("Extract letter",str[2])
+print("Extract last character ",str[-1])
+print("Return range of charater",str[3:7])
+print("Return all characters from indes 5",str[5:])
+print("Return all characters before index 6",str[:6])
+print("Replace python with java",str.replace('python','java'))
+print("In operator Checkin",'Wel'in str)
+print("Not in Operator checking",'N' not in str)
+print("To capitalize first charater",str.capitalize())
+print("To convert all string to lowercase",str.lower())
+print("To convert all string to uppercase",str.upper())
+str1='o'
+print("To count the occurence of letter o in str",str.count(str1))
+print("To return the substring using split()",str.split())
+print("To return the substring using split() till some limit",str.split(' ',1))
+seq=('ab','bc','cd')
+print("The string obtained by using join()",str.join(seq))
+print("Length of String",len(str))
