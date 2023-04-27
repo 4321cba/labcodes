@@ -1,0 +1,9 @@
+km = float (input("Enter the distance between two cities in kilometers: "))
+mtr = km * 1000
+cent = km * 100000
+inch = km * 2.54 * 100000
+ft = km * 30.28 * 1000
+print("Distance between two cities in meters is:%f ",mtr)
+print("Distance between two cities in centimeters is:%f ",cent)
+print("Distance between two cities in inches is:%f ",inch)
+print("Distance between two cities in feet is:%f ",ft)
