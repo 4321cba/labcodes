@@ -1,0 +1,18 @@
+##from tkinter import *
+##window=Tk()
+### add widgets here
+##window.title('Hello Python')
+##window.geometry("400x200")
+##window.minsize(100,100)
+##window.maxsize(500,700)
+##class1=Label(text="The class is good")
+##class1.pack()
+##window.mainloop()
+
+from tkinter import *
+root=Tk()  # create root window
+c= Canvas(root,bg='blue',height=700,width=1200, cursor='pencil')
+#id=c.create_line(50,50,200,50,200,150,50,150,width=4,fill="white")    # create line in the canvas joining points (50,50)(c=200,r=50)(200,150)
+c.pack()   # add canvas to the root window
+
+root.mainloop()
