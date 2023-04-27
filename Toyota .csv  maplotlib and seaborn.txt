@@ -1,0 +1,20 @@
+import numpy as np
+import matplotlib.pyplot as plt  
+cars_data=pd.read_csv('Toyota.csv',index_col=0,na_values=["??","???"])
+print(cars_data)
+plt.scatter(cars_data['Age'],cars_data['Price'], c='red')
+plt.title("price vs Age")
+plt.xlabel("age")
+plt.ylabel('price')
+plt.show 
+plt.hist(cars_data['KM'])
+plt.hist(cars_data['KM'],color='green',edgecolor='white',bins=5)
+plt.title("Histogram of kilometer")
+plt.xlabel("kilometer")
+plt.ylabel('frequecny')
+plt.show
+import seaborn as sns 
+sns.set(style='darkgrid')
+sns.regplot(x=cars_data['Age'],y=cars_data['Price'])
+sns.set(style='darkgrid')
+sns.regplot(x=cars_data['Age'],y=cars_data['Price'],fit_reg=False)
