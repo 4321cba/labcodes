@@ -1,0 +1,12 @@
+from datetime import date
+today=date.today()
+class person:
+    def __init__(self,name):
+     self.name=name
+    def age(self):
+        birth_year=int(input('enter your year of birth :'))
+        age=today.year-birth_year
+        return age
+x=person(input('enter your name :'))
+data=x.age()
+print('your age is :',data)
