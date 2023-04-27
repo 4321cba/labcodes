@@ -1,0 +1,88 @@
+# empty list
+My_list = []
+# list of integers
+My_list=[1, 2, 3]
+# list with mixed data types
+My_list = [1, "Hello", 3.4]
+print(My_list)
+# nested list
+My_list = ["mouse", [8, 4, 6], ['a']]
+My_list = ['p', 'r', 'o', 'b', 'e']
+print(My_list[0])
+print(My_list[2])
+print(My_list[4])
+# Nested List
+N_list = ["Happy", [2, 0, 1, 5]]
+# Nested indexing
+print(N_list[0][0])
+print(N_list[1][2])
+#negative indexing
+My_list = ['p','r','o','b','e']
+print(My_list[-1])#negative indexing
+print(My_list[-5])
+# List slicing in Python
+My_list = ['p','r','o','g','r','a','m','i','z']
+# elements 3rd to 5th
+print(My_list[2:5])
+# elements beginning to 4th
+print(My_list[:-5])
+# elements 6th to end
+print(My_list[5:])
+# elements beginning to end
+print(My_list[:])
+# add or update the element in list
+Odd = [2, 4, 6, 8]
+# change the 1st item
+Odd[0] = 1
+print(Odd)
+# change 2nd to 4th items
+Odd[1:4] = [3, 5, 7]
+print(Odd)
+# Appending and Extending lists in Python
+Odd = [1, 3, 5]
+Odd.append(7)
+print(Odd)
+Odd.extend([9, 11, 13])
+print(Odd)
+# Concatenating and repeating lists
+Odd = [1, 3, 5]
+print(Odd + [9, 7, 5])#Concatenating lists
+print(Odd * 3)# repeating lists
+# Demonstration of list insert() method
+Odd = [1, 9]
+Odd.insert(1,3)
+print(Odd)
+Odd[2:2] = [5, 7]
+print(Odd)
+# deleting list items
+My_list = ['p', 'r', 'o', 'b', 'l', 'e', 'm']
+del My_list[2]# delete one item
+print(My_list)
+del My_list[1:5]# delete multiple items
+print(My_list)
+del My_list# delete entire list
+#print(My_list)# Error: List not defined
+#Remove list
+My_list = ['p','r','o','b','l','e','m']
+My_list.remove('p')
+# Output: [‘r’, ‘o’, ‘b’, ‘l’, ‘e’, ‘m’]
+print(My_list)
+# Output: ‘o’
+print(My_list.pop(1))
+# Output: [‘r’, ‘b’, ‘l’, ‘e’, ‘m’]
+print(My_list)
+# Output: ‘m’
+print(My_list.pop())
+# Output: [‘r’, ‘b’, ‘l’, ‘e’]
+print(My_list)
+My_list.clear()
+# Output: []
+print(My_list)
+# Python list methods
+My_list = [3, 8, 1, 6, 0, 8, 4]
+print(My_list.index(8)) # Using index method
+print(My_list.count(8))# Count method
+My_list.sort() #sort method
+print(My_list)
+My_list.reverse()#reverse method
+print(My_list)
