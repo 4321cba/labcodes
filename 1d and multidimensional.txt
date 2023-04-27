@@ -1,0 +1,47 @@
+import array as arr
+a=arr.array('i',[1,2,3]) # creating an array with integer type
+print("The new created array is :",end=" ") #printing original array
+for i in range(0,3):
+    print(a[i],end=" ")
+print()
+
+b=arr.array('d',[2.5,3.2,3.3])# creating an array with float type
+print("The new created array is :",end=" ") #printing original array
+for i in range(0,3):
+    print(b[i],end=" ")
+print()
+
+a.insert(1,4) #inserting array using insert() function
+print("Arra after insertion:",end=" ")
+for i in (a):
+    print(i,end=" ")
+print()
+
+b.append(4.4)#adding an element using append()
+print("Array after insertion:",end=" ")
+for i in (b):
+    print(i,end=" ")
+print()
+
+print("Accessing int element:",a[0])#accessing element of array
+print("Accessing float element:",b[2])
+
+print("The popped element is:",end=" ")#using pop() to remove element at 2nd position
+print(a.pop(3))
+print("The array after popping is:",end=" ")
+for i in range (0,3):
+    print(a[i],end=" ")
+    
+a.remove(1)#using remove() to remove 1st occurence of 1
+print("The array after removing is:",end=" ")
+for i in range (0,2):
+    print(a[i],end=" ")
+
+c=arr.array('i',[1,2,34,7]) #using index of 1st occurrence of element of 34
+print("the index of 1st occurrence of 2 is:",end=" ")
+print(c.index(34))
+
+c[2]=78 #updating a element in a array
+print("Array after updation:",end=" ")
+for i in range (0,4):
+    print(c[i],end=" ")
