@@ -1,0 +1,25 @@
+
+# create the file
+filename = "example.txt"
+file = open(filename, "w")
+ 
+# accept 3 lines of data from the user and write them to the file
+for i in range(3):
+    line = input("Enter line {}: ".format(i+1))
+    file.write(line + "\n")
+ 
+# close the file
+file.close()
+ 
+# open the file and read the data
+file = open(filename, "r")
+data = file.read()
+ 
+# print the data
+print("Data read from file:")
+print(data)
+ 
+# close the file
+file.close()
+
+
