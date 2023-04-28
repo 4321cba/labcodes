@@ -1,0 +1,39 @@
+# accept a list of integers from the user
+my_list = []
+n = int(input("Enter the number of elements in the list: "))
+for i in range(n):
+    my_list.append(int(input("Enter element {}: ".format(i+1))))
+
+
+
+# print the list in reverse order
+print("1. List in reverse order:")
+print(my_list[::-1])
+
+
+
+# count the number of times a specific element appears in the list
+element = int(input("Enter an element to count: "))
+count = my_list.count(element)
+print("2. Number of times {} appears in the list: {}".format(element, count))
+
+
+
+# add element
+my_list.append(int(input("Enter element : ")))
+print("new list",my_list.append)
+
+
+
+
+# sort the list in ascending order
+my_list.sort()
+print("4. List in ascending order:")
+print(my_list)
+# find the sum of all elements in the list
+
+
+
+total = sum(my_list)
+print("5. Sum of all elements in the list: {}".format(total))
+
