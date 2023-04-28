@@ -1,0 +1,25 @@
+# create the sets
+set1 = {1, 2, 3, 4, 5}
+set2 = {4, 5, 6, 7, 8}
+ 
+# find the common elements
+common_elements = set1.intersection(set2)
+ 
+# find the elements in set1 but not set2
+set1_only = set1.difference(set2)
+ 
+# determine if set1 is a subset of set2
+is_subset = set1.issubset(set2)
+ 
+# remove and return an arbitrary element from set1
+arbitrary_element = set1.pop()
+ 
+# display the results
+print("Set 1: ", set1)
+print("Set 2: ", set2)
+print("Common Elements: ", common_elements)
+print("Elements in Set 1 Only: ", set1_only)
+print("Is Set 1 a Subset of Set 2? ", is_subset)
+print("Removed Element from Set 1: ", arbitrary_element)
+
+
