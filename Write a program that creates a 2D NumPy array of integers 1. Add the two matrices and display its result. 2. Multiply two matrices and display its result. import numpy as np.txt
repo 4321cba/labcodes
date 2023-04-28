@@ -1,0 +1,31 @@
+ 
+# create the first matrix
+matrix1 = np.array([[1, 2, 3],
+                    [4, 5, 6],
+                    [7, 8, 9]])
+ 
+# create the second matrix
+matrix2 = np.array([[9, 8, 7],
+                    [6, 5, 4],
+                    [3, 2, 1]])
+ 
+# add the matrices together
+matrix_sum = matrix1 + matrix2
+ 
+# multiply the matrices
+matrix_product = np.dot(matrix1, matrix2)
+ 
+# display the results
+print("Matrix 1:")
+print(matrix1)
+ 
+print("Matrix 2:")
+print(matrix2)
+ 
+print("Matrix Sum:")
+print(matrix_sum)
+ 
+print("Matrix Product:")
+print(matrix_product)
+
+
