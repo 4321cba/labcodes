@@ -1,0 +1,8 @@
+def square(list):
+ret = []
+for i in list:
+     ret.append(i ** 2)
+return ret
+x=[12,23,9,13,8,7]
+print(x)
+print(square(x))
